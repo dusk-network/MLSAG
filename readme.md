@@ -44,12 +44,6 @@ This allows an outsider to calculate the key Image of the signer with knowledge 
 
 - Processor : 2.2Ghz intel core i7
 
-## License
-
-Licensed under MIT: 
-
-- MIT license (LICENSE-MIT or http://opensource.org/licenses/MIT)
-
 ## Design decisions
 
 The Verify method takes a reference to the public keys
@@ -61,3 +55,9 @@ The Sign method does not take a reference to the the private key
 We could equally argue that the private key should take a reference and the destroying of it, should not be this libraries responsibility.
 
 - This library does not mamnage any state, therefore if a user produces two signatures with the same linkability tags, there will be no errors. This logic is usually handled in a state machine.
+
+## License
+
+Licensed under MIT: 
+
+- MIT license (LICENSE-MIT or http://opensource.org/licenses/MIT)
